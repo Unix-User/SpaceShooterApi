@@ -2,8 +2,8 @@
 
 namespace Database\Seeders;
 
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\Score; // Assuming Score model exists and matches the migration structure
 
 class DatabaseSeeder extends Seeder
 {
@@ -12,11 +12,16 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // \App\Models\User::factory(10)->create();
-
-        // \App\Models\User::factory()->create([
+        // Creating random scores
+        for ($i = 0; $i < 10; $i++) {
+            Score::create([
+                'name' => 'Player ' . $i,
+                'score' => rand(1, 1000), // Random score between 1 and 1000
+            ]);
+        }
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
     }
 }
+

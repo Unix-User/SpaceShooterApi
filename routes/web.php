@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ScoreController; // Importing the ScoreController
+use App\Models\Score;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +16,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $scores = Score::paginate(8);
+    return view('welcome', compact('scores'));
 });
+
+// Using the imported ScoreController for route definitions
+Route::get('/scores', [ScoreController::class, 'index']);
+Route::post('/scores', [ScoreController::class, 'store']);
+Route::get('/scores/{id}', [ScoreController::class, 'show']);
+Route::put('/scores/{id}', [ScoreController::class, 'update']);
+Route::delete('/scores/{id}', [ScoreController::class, 'destroy']);
