@@ -5,11 +5,40 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- HTML Meta Tags -->
     <title>SpaceShooter</title>
+    <meta name="description" content="Explore o Universo com a nossa emocionante demonstração do SpaceShooter e embarque em uma aventura intergaláctica sem igual.">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://spaceshooter.udianix.com.br">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SpaceShooter">
+    <meta property="og:description" content="Explore o Universo com a nossa emocionante demonstração do SpaceShooter e embarque em uma aventura intergaláctica sem igual.">
+    <!--
+  You can generate this image URL dynamically: https://ogcdn.net/e4b8c678-7bd5-445d-ba03-bfaad510c686/v3/{site_text}/{title_text}/{image_url}/og.png
+  Replace the variables in the brackets with your own values and use this URL in the image tag below this comment. Ensure values are URL encoded.
+  For more information, read: https://www.opengraph.xyz/blog/how-to-implement-dynamic-open-graph-images
+-->
+    <meta property="og:image" content="https://ogcdn.net/e4b8c678-7bd5-445d-ba03-bfaad510c686/v3/spaceshooter.udianix.com.br/SpaceShooter/https%3A%2F%2Fopengraph.b-cdn.net%2Fproduction%2Fdocuments%2Fa22dad26-ccd8-45d8-8467-bf4b451d8c45.png%3Ftoken%3DUEq6zUufOUCLP_-czMZdiUFNwwEHB-IejZiudVjn1PY%26height%3D609%26width%3D343%26expires%3D33245303181/og.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="spaceshooter.udianix.com.br">
+    <meta property="twitter:url" content="https://spaceshooter.udianix.com.br">
+    <meta name="twitter:title" content="SpaceShooter">
+    <meta name="twitter:description" content="Explore o Universo com a nossa emocionante demonstração do SpaceShooter e embarque em uma aventura intergaláctica sem igual.">
+    <!--
+  You can generate this image URL dynamically: https://ogcdn.net/e4b8c678-7bd5-445d-ba03-bfaad510c686/v3/{site_text}/{title_text}/{image_url}/og.png
+  Replace the variables in the brackets with your own values and use this URL in the image tag below this comment. Ensure values are URL encoded.
+  For more information, read: https://www.opengraph.xyz/blog/how-to-implement-dynamic-open-graph-images
+-->
+    <meta name="twitter:image" content="https://ogcdn.net/e4b8c678-7bd5-445d-ba03-bfaad510c686/v3/spaceshooter.udianix.com.br/SpaceShooter/https%3A%2F%2Fopengraph.b-cdn.net%2Fproduction%2Fdocuments%2Fa22dad26-ccd8-45d8-8467-bf4b451d8c45.png%3Ftoken%3DUEq6zUufOUCLP_-czMZdiUFNwwEHB-IejZiudVjn1PY%26height%3D609%26width%3D343%26expires%3D33245303181/og.png">
+
+    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.bunny.net/css?family=figtree:340,600&display=swap" rel="stylesheet" />
 
     <!-- Styles -->
     <!-- <link href="https://unpkg.com/tailwindcss@^3/dist/tailwind.min.css" rel="stylesheet"> -->
@@ -904,9 +933,9 @@
                     <p>Explore o Universo com a nossa emocionante demonstração do SpaceShooter e embarque em uma aventura intergaláctica sem igual.</p>
                 </div>
                 <div class="grid grid-cols-3 gap-6 lg:gap-8 text-center mt-4">
-                    <a href="https://github.com/yourgithubaccount/SpaceShooter" class="bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-lg">Código no GitHub</a>
-                    <a href="/download/spaceshooter.exe" class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded-lg">Baixar Windows</a>
-                    <a href="/download/spaceshooter.apk" class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded-lg">Baixar Android</a>
+                    <a href="https://github.com/Unix-User/SpaceShooter" class="bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-lg">Código no GitHub</a>
+                    <a href="/storage/SpaceShooter.exe" class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded-lg">Baixar Windows</a>
+                    <a href="/storage/SpaceShooter.apk" class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded-lg">Baixar Android</a>
                 </div>
             </div>
 
