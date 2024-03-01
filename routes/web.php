@@ -16,7 +16,7 @@ use App\Models\Score;
 */
 
 Route::get('/', function () {
-    $scores = Score::paginate(8);
+    $scores = Score::orderBy('score', 'desc')->paginate(8);
     return view('welcome', compact('scores'));
 });
 
