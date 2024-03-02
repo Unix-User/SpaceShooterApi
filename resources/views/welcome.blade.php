@@ -44,832 +44,7 @@
     <!-- <link href="https://unpkg.com/tailwindcss@^3/dist/tailwind.min.css" rel="stylesheet"> -->
     @vite('resources/css/app.css')
 
-    <style>
-        /* ! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com */
-        *,
-        ::after,
-        ::before {
-            box-sizing: border-box;
-            border-width: 0;
-            border-style: solid;
-            border-color: #e5e7eb
-        }
 
-        ::after,
-        ::before {
-            --tw-content: ''
-        }
-
-        html {
-            line-height: 1.5;
-            -webkit-text-size-adjust: 100%;
-            -moz-tab-size: 4;
-            tab-size: 4;
-            font-family: Figtree, sans-serif;
-            font-feature-settings: normal
-        }
-
-        body {
-            margin: 0;
-            line-height: inherit
-        }
-
-        hr {
-            height: 0;
-            color: inherit;
-            border-top-width: 1px
-        }
-
-        abbr:where([title]) {
-            -webkit-text-decoration: underline dotted;
-            text-decoration: underline dotted
-        }
-
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-size: inherit;
-            font-weight: inherit
-        }
-
-        a {
-            color: inherit;
-            text-decoration: inherit
-        }
-
-        b,
-        strong {
-            font-weight: bolder
-        }
-
-        code,
-        kbd,
-        pre,
-        samp {
-            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-            font-size: 1em
-        }
-
-        small {
-            font-size: 80%
-        }
-
-        sub,
-        sup {
-            font-size: 75%;
-            line-height: 0;
-            position: relative;
-            vertical-align: baseline
-        }
-
-        sub {
-            bottom: -.25em
-        }
-
-        sup {
-            top: -.5em
-        }
-
-        table {
-            text-indent: 0;
-            border-color: inherit;
-            border-collapse: collapse
-        }
-
-        button,
-        input,
-        optgroup,
-        select,
-        textarea {
-            font-family: inherit;
-            font-size: 100%;
-            font-weight: inherit;
-            line-height: inherit;
-            color: inherit;
-            margin: 0;
-            padding: 0
-        }
-
-        button,
-        select {
-            text-transform: none
-        }
-
-        [type=button],
-        [type=reset],
-        [type=submit],
-        button {
-            -webkit-appearance: button;
-            background-color: transparent;
-            background-image: none
-        }
-
-        :-moz-focusring {
-            outline: auto
-        }
-
-        :-moz-ui-invalid {
-            box-shadow: none
-        }
-
-        progress {
-            vertical-align: baseline
-        }
-
-        ::-webkit-inner-spin-button,
-        ::-webkit-outer-spin-button {
-            height: auto
-        }
-
-        [type=search] {
-            -webkit-appearance: textfield;
-            outline-offset: -2px
-        }
-
-        ::-webkit-search-decoration {
-            -webkit-appearance: none
-        }
-
-        ::-webkit-file-upload-button {
-            -webkit-appearance: button;
-            font: inherit
-        }
-
-        summary {
-            display: list-item
-        }
-
-        blockquote,
-        dd,
-        dl,
-        figure,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        hr,
-        p,
-        pre {
-            margin: 0
-        }
-
-        fieldset {
-            margin: 0;
-            padding: 0
-        }
-
-        legend {
-            padding: 0
-        }
-
-        menu,
-        ol,
-        ul {
-            list-style: none;
-            margin: 0;
-            padding: 0
-        }
-
-        textarea {
-            resize: vertical
-        }
-
-        input::placeholder,
-        textarea::placeholder {
-            opacity: 1;
-            color: #9ca3af
-        }
-
-        [role=button],
-        button {
-            cursor: pointer
-        }
-
-        :disabled {
-            cursor: default
-        }
-
-        audio,
-        canvas,
-        embed,
-        iframe,
-        img,
-        object,
-        svg,
-        video {
-            display: block;
-            vertical-align: middle
-        }
-
-        img,
-        video {
-            max-width: 100%;
-            height: auto
-        }
-
-        [hidden] {
-            display: none
-        }
-
-        *,
-        ::before,
-        ::after {
-            --tw-border-spacing-x: 0;
-            --tw-border-spacing-y: 0;
-            --tw-translate-x: 0;
-            --tw-translate-y: 0;
-            --tw-rotate: 0;
-            --tw-skew-x: 0;
-            --tw-skew-y: 0;
-            --tw-scale-x: 1;
-            --tw-scale-y: 1;
-            --tw-pan-x: ;
-            --tw-pan-y: ;
-            --tw-pinch-zoom: ;
-            --tw-scroll-snap-strictness: proximity;
-            --tw-ordinal: ;
-            --tw-slashed-zero: ;
-            --tw-numeric-figure: ;
-            --tw-numeric-spacing: ;
-            --tw-numeric-fraction: ;
-            --tw-ring-inset: ;
-            --tw-ring-offset-width: 0px;
-            --tw-ring-offset-color: #fff;
-            --tw-ring-color: rgb(59 130 246 / 0.5);
-            --tw-ring-offset-shadow: 0 0 #0000;
-            --tw-ring-shadow: 0 0 #0000;
-            --tw-shadow: 0 0 #0000;
-            --tw-shadow-colored: 0 0 #0000;
-            --tw-blur: ;
-            --tw-brightness: ;
-            --tw-contrast: ;
-            --tw-grayscale: ;
-            --tw-hue-rotate: ;
-            --tw-invert: ;
-            --tw-saturate: ;
-            --tw-sepia: ;
-            --tw-drop-shadow: ;
-            --tw-backdrop-blur: ;
-            --tw-backdrop-brightness: ;
-            --tw-backdrop-contrast: ;
-            --tw-backdrop-grayscale: ;
-            --tw-backdrop-hue-rotate: ;
-            --tw-backdrop-invert: ;
-            --tw-backdrop-opacity: ;
-            --tw-backdrop-saturate: ;
-            --tw-backdrop-sepia:
-        }
-
-        ::-webkit-backdrop {
-            --tw-border-spacing-x: 0;
-            --tw-border-spacing-y: 0;
-            --tw-translate-x: 0;
-            --tw-translate-y: 0;
-            --tw-rotate: 0;
-            --tw-skew-x: 0;
-            --tw-skew-y: 0;
-            --tw-scale-x: 1;
-            --tw-scale-y: 1;
-            --tw-pan-x: ;
-            --tw-pan-y: ;
-            --tw-pinch-zoom: ;
-            --tw-scroll-snap-strictness: proximity;
-            --tw-ordinal: ;
-            --tw-slashed-zero: ;
-            --tw-numeric-figure: ;
-            --tw-numeric-spacing: ;
-            --tw-numeric-fraction: ;
-            --tw-ring-inset: ;
-            --tw-ring-offset-width: 0px;
-            --tw-ring-offset-color: #fff;
-            --tw-ring-color: rgb(59 130 246 / 0.5);
-            --tw-ring-offset-shadow: 0 0 #0000;
-            --tw-ring-shadow: 0 0 #0000;
-            --tw-shadow: 0 0 #0000;
-            --tw-shadow-colored: 0 0 #0000;
-            --tw-blur: ;
-            --tw-brightness: ;
-            --tw-contrast: ;
-            --tw-grayscale: ;
-            --tw-hue-rotate: ;
-            --tw-invert: ;
-            --tw-saturate: ;
-            --tw-sepia: ;
-            --tw-drop-shadow: ;
-            --tw-backdrop-blur: ;
-            --tw-backdrop-brightness: ;
-            --tw-backdrop-contrast: ;
-            --tw-backdrop-grayscale: ;
-            --tw-backdrop-hue-rotate: ;
-            --tw-backdrop-invert: ;
-            --tw-backdrop-opacity: ;
-            --tw-backdrop-saturate: ;
-            --tw-backdrop-sepia:
-        }
-
-        ::backdrop {
-            --tw-border-spacing-x: 0;
-            --tw-border-spacing-y: 0;
-            --tw-translate-x: 0;
-            --tw-translate-y: 0;
-            --tw-rotate: 0;
-            --tw-skew-x: 0;
-            --tw-skew-y: 0;
-            --tw-scale-x: 1;
-            --tw-scale-y: 1;
-            --tw-pan-x: ;
-            --tw-pan-y: ;
-            --tw-pinch-zoom: ;
-            --tw-scroll-snap-strictness: proximity;
-            --tw-ordinal: ;
-            --tw-slashed-zero: ;
-            --tw-numeric-figure: ;
-            --tw-numeric-spacing: ;
-            --tw-numeric-fraction: ;
-            --tw-ring-inset: ;
-            --tw-ring-offset-width: 0px;
-            --tw-ring-offset-color: #fff;
-            --tw-ring-color: rgb(59 130 246 / 0.5);
-            --tw-ring-offset-shadow: 0 0 #0000;
-            --tw-ring-shadow: 0 0 #0000;
-            --tw-shadow: 0 0 #0000;
-            --tw-shadow-colored: 0 0 #0000;
-            --tw-blur: ;
-            --tw-brightness: ;
-            --tw-contrast: ;
-            --tw-grayscale: ;
-            --tw-hue-rotate: ;
-            --tw-invert: ;
-            --tw-saturate: ;
-            --tw-sepia: ;
-            --tw-drop-shadow: ;
-            --tw-backdrop-blur: ;
-            --tw-backdrop-brightness: ;
-            --tw-backdrop-contrast: ;
-            --tw-backdrop-grayscale: ;
-            --tw-backdrop-hue-rotate: ;
-            --tw-backdrop-invert: ;
-            --tw-backdrop-opacity: ;
-            --tw-backdrop-saturate: ;
-            --tw-backdrop-sepia:
-        }
-
-        .relative {
-            position: relative
-        }
-
-        .mx-auto {
-            margin-left: auto;
-            margin-right: auto
-        }
-
-        .mx-6 {
-            margin-left: 1.5rem;
-            margin-right: 1.5rem
-        }
-
-        .ml-4 {
-            margin-left: 1rem
-        }
-
-        .mt-16 {
-            margin-top: 4rem
-        }
-
-        .mt-6 {
-            margin-top: 1.5rem
-        }
-
-        .mt-4 {
-            margin-top: 1rem
-        }
-
-        .-mt-px {
-            margin-top: -1px
-        }
-
-        .mr-1 {
-            margin-right: 0.25rem
-        }
-
-        .flex {
-            display: flex
-        }
-
-        .inline-flex {
-            display: inline-flex
-        }
-
-        .grid {
-            display: grid
-        }
-
-        .h-16 {
-            height: 4rem
-        }
-
-        .h-7 {
-            height: 1.75rem
-        }
-
-        .h-6 {
-            height: 1.5rem
-        }
-
-        .h-5 {
-            height: 1.25rem
-        }
-
-        .min-h-screen {
-            min-height: 100vh
-        }
-
-        .w-auto {
-            width: auto
-        }
-
-        .w-16 {
-            width: 4rem
-        }
-
-        .w-7 {
-            width: 1.75rem
-        }
-
-        .w-6 {
-            width: 1.5rem
-        }
-
-        .w-5 {
-            width: 1.25rem
-        }
-
-        .max-w-7xl {
-            max-width: 80rem
-        }
-
-        .shrink-0 {
-            flex-shrink: 0
-        }
-
-        .scale-100 {
-            --tw-scale-x: 1;
-            --tw-scale-y: 1;
-            transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
-        }
-
-        .grid-cols-1 {
-            grid-template-columns: repeat(1, minmax(0, 1fr))
-        }
-
-        .items-center {
-            align-items: center
-        }
-
-        .justify-center {
-            justify-content: center
-        }
-
-        .gap-6 {
-            gap: 1.5rem
-        }
-
-        .gap-4 {
-            gap: 1rem
-        }
-
-        .self-center {
-            align-self: center
-        }
-
-        .rounded-lg {
-            border-radius: 0.5rem
-        }
-
-        .rounded-full {
-            border-radius: 9999px
-        }
-
-        .bg-gray-100 {
-            --tw-bg-opacity: 1;
-            background-color: rgb(243 244 246 / var(--tw-bg-opacity))
-        }
-
-        .bg-white {
-            --tw-bg-opacity: 1;
-            background-color: rgb(255 255 255 / var(--tw-bg-opacity))
-        }
-
-        .bg-red-50 {
-            --tw-bg-opacity: 1;
-            background-color: rgb(254 242 242 / var(--tw-bg-opacity))
-        }
-
-        .bg-dots-darker {
-            background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.22676 0C1.91374 0 2.45351 0.539773 2.45351 1.22676C2.45351 1.91374 1.91374 2.45351 1.22676 2.45351C0.539773 2.45351 0 1.91374 0 1.22676C0 0.539773 0.539773 0 1.22676 0Z' fill='rgba(0,0,0,0.07)'/%3E%3C/svg%3E")
-        }
-
-        .from-gray-700\/50 {
-            --tw-gradient-from: rgb(55 65 81 / 0.5);
-            --tw-gradient-to: rgb(55 65 81 / 0);
-            --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to)
-        }
-
-        .via-transparent {
-            --tw-gradient-to: rgb(0 0 0 / 0);
-            --tw-gradient-stops: var(--tw-gradient-from), transparent, var(--tw-gradient-to)
-        }
-
-        .bg-center {
-            background-position: center
-        }
-
-        .stroke-red-500 {
-            stroke: #ef4444
-        }
-
-        .stroke-gray-400 {
-            stroke: #9ca3af
-        }
-
-        .p-6 {
-            padding: 1.5rem
-        }
-
-        .px-6 {
-            padding-left: 1.5rem;
-            padding-right: 1.5rem
-        }
-
-        .text-center {
-            text-align: center
-        }
-
-        .text-right {
-            text-align: right
-        }
-
-        .text-xl {
-            font-size: 1.25rem;
-            line-height: 1.75rem
-        }
-
-        .text-sm {
-            font-size: 0.875rem;
-            line-height: 1.25rem
-        }
-
-        .font-semibold {
-            font-weight: 600
-        }
-
-        .leading-relaxed {
-            line-height: 1.625
-        }
-
-        .text-gray-600 {
-            --tw-text-opacity: 1;
-            color: rgb(75 85 99 / var(--tw-text-opacity))
-        }
-
-        .text-gray-900 {
-            --tw-text-opacity: 1;
-            color: rgb(17 24 39 / var(--tw-text-opacity))
-        }
-
-        .text-gray-500 {
-            --tw-text-opacity: 1;
-            color: rgb(107 114 128 / var(--tw-text-opacity))
-        }
-
-        .underline {
-            -webkit-text-decoration-line: underline;
-            text-decoration-line: underline
-        }
-
-        .antialiased {
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale
-        }
-
-        .shadow-2xl {
-            --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-            --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
-            box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
-        }
-
-        .shadow-gray-500\/20 {
-            --tw-shadow-color: rgb(107 114 128 / 0.2);
-            --tw-shadow: var(--tw-shadow-colored)
-        }
-
-        .transition-all {
-            transition-property: all;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            transition-duration: 150ms
-        }
-
-        .selection\:bg-red-500 *::selection {
-            --tw-bg-opacity: 1;
-            background-color: rgb(239 68 68 / var(--tw-bg-opacity))
-        }
-
-        .selection\:text-white *::selection {
-            --tw-text-opacity: 1;
-            color: rgb(255 255 255 / var(--tw-text-opacity))
-        }
-
-        .selection\:bg-red-500::selection {
-            --tw-bg-opacity: 1;
-            background-color: rgb(239 68 68 / var(--tw-bg-opacity))
-        }
-
-        .selection\:text-white::selection {
-            --tw-text-opacity: 1;
-            color: rgb(255 255 255 / var(--tw-text-opacity))
-        }
-
-        .hover\:text-gray-900:hover {
-            --tw-text-opacity: 1;
-            color: rgb(17 24 39 / var(--tw-text-opacity))
-        }
-
-        .hover\:text-gray-700:hover {
-            --tw-text-opacity: 1;
-            color: rgb(55 65 81 / var(--tw-text-opacity))
-        }
-
-        .focus\:rounded-sm:focus {
-            border-radius: 0.125rem
-        }
-
-        .focus\:outline:focus {
-            outline-style: solid
-        }
-
-        .focus\:outline-2:focus {
-            outline-width: 2px
-        }
-
-        .focus\:outline-red-500:focus {
-            outline-color: #ef4444
-        }
-
-        .group:hover .group-hover\:stroke-gray-600 {
-            stroke: #4b5563
-        }
-
-        .z-10 {
-            z-index: 10
-        }
-
-        @media (prefers-reduced-motion: no-preference) {
-            .motion-safe\:hover\:scale-\[1\.01\]:hover {
-                --tw-scale-x: 1.01;
-                --tw-scale-y: 1.01;
-                transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
-            }
-        }
-
-        @media (prefers-color-scheme: dark) {
-            .dark\:bg-gray-900 {
-                --tw-bg-opacity: 1;
-                background-color: rgb(17 24 39 / var(--tw-bg-opacity))
-            }
-
-            .dark\:bg-gray-800\/50 {
-                background-color: rgb(31 41 55 / 0.5)
-            }
-
-            .dark\:bg-red-800\/20 {
-                background-color: rgb(153 27 27 / 0.2)
-            }
-
-            .dark\:bg-dots-lighter {
-                background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.22676 0C1.91374 0 2.45351 0.539773 2.45351 1.22676C2.45351 1.91374 1.91374 2.45351 1.22676 2.45351C0.539773 2.45351 0 1.91374 0 1.22676C0 0.539773 0.539773 0 1.22676 0Z' fill='rgba(255,255,255,0.07)'/%3E%3C/svg%3E")
-            }
-
-            .dark\:bg-gradient-to-bl {
-                background-image: linear-gradient(to bottom left, var(--tw-gradient-stops))
-            }
-
-            .dark\:stroke-gray-600 {
-                stroke: #4b5563
-            }
-
-            .dark\:text-gray-400 {
-                --tw-text-opacity: 1;
-                color: rgb(156 163 175 / var(--tw-text-opacity))
-            }
-
-            .dark\:text-white {
-                --tw-text-opacity: 1;
-                color: rgb(255 255 255 / var(--tw-text-opacity))
-            }
-
-            .dark\:shadow-none {
-                --tw-shadow: 0 0 #0000;
-                --tw-shadow-colored: 0 0 #0000;
-                box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
-            }
-
-            .dark\:ring-1 {
-                --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-                --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-                box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)
-            }
-
-            .dark\:ring-inset {
-                --tw-ring-inset: inset
-            }
-
-            .dark\:ring-white\/5 {
-                --tw-ring-color: rgb(255 255 255 / 0.05)
-            }
-
-            .dark\:hover\:text-white:hover {
-                --tw-text-opacity: 1;
-                color: rgb(255 255 255 / var(--tw-text-opacity))
-            }
-
-            .group:hover .dark\:group-hover\:stroke-gray-400 {
-                stroke: #9ca3af
-            }
-        }
-
-        /** This media query applies styles for screens that are at least 640px wide.
-                 It includes styles for fixed positioning, alignment, margins, and text alignment for small screens. */
-        @media (min-width: 640px) {
-            .sm\:fixed {
-                position: fixed
-            }
-
-            .sm\:top-0 {
-                top: 0px
-            }
-
-            .sm\:right-0 {
-                right: 0px
-            }
-
-            .sm\:ml-0 {
-                margin-left: 0px
-            }
-
-            .sm\:flex {
-                display: flex
-            }
-
-            .sm\:items-center {
-                align-items: center
-            }
-
-            .sm\:justify-center {
-                justify-content: center
-            }
-
-            .sm\:justify-between {
-                justify-content: space-between
-            }
-
-            .sm\:text-left {
-                text-align: left
-            }
-
-            .sm\:text-right {
-                text-align: right
-            }
-        }
-
-        /** This media query applies styles for screens that are at least 768px wide.
-                It sets the grid layout to have 2 columns for medium screens.*/
-        @media (min-width: 768px) {
-            .md\:grid-cols-2 {
-                grid-template-columns: repeat(2, minmax(0, 1fr))
-            }
-        }
-
-        /** This media query applies styles for screens that are at least 1024px wide.
-                 It includes styles for gaps, padding, and sets the grid layout to have 4 columns for large screens.*/
-        @media (min-width: 1024px) {
-            .lg\:gap-8 {
-                gap: 2rem
-            }
-
-            .lg\:p-8 {
-                padding: 2rem
-            }
-
-            .lg\:grid-cols-4 {
-                grid-template-columns: repeat(4, minmax(0, 1fr))
-            }
-        }
-    </style>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const toggleButton = document.querySelector('.menu-toggle');
@@ -900,12 +75,12 @@
 
         <div class="max-w-7xl mx-auto p-6 lg:p-8">
             <div class="flex flex-col justify-center items-center p-10">
-                <h1 class="text-5xl font-bold mb-4 text-white">SpaceShooter</h1>
+                <h1 class="text-5xl font-bold mb-4 dark:text-white">SpaceShooter</h1>
                 <div class="flex justify-center items-center">
                     <img src="storage/logo.png" alt="SpaceShooter Logo" class="h-32 w-32">
                 </div>
             </div>
-            <nav class="bg-gray-800 rounded-lg">
+            <nav class="bg-white dark:bg-gray-800 rounded-lg">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="flex items-center justify-between h-16">
                         <div class="flex items-center">
@@ -914,14 +89,14 @@
                             </div>
                             <div class="hidden md:block">
                                 <div class="ml-10 flex items-baseline space-x-4">
-                                    <a href="#home" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
-                                    <a href="#score" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Leaderboard</a>
-                                    <a href="#about" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+                                    <a href="#home" class="dark:text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                                    <a href="#score" class="dark:text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Leaderboard</a>
+                                    <a href="#about" class="dark:text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
                                 </div>
                             </div>
                         </div>
                         <div class="-mr-2 flex md:hidden">
-                            <button class="menu-toggle bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white">
+                            <button class="menu-toggle bg-white inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-200 focus:outline-none focus:bg-gray-200 focus:text-white dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white">
                                 <span class="sr-only">Open main menu</span>
                                 <!-- Icon when menu is closed. -->
                                 <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -938,9 +113,9 @@
                 <!-- Mobile menu, toggle classes based on menu state. -->
                 <div class="mobile-menu md:hidden hidden">
                     <div class="px-2 pt-2 pb-3 space-y-1">
-                        <a href="#home" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
-                        <a href="#score" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Leaderboard</a>
-                        <a href="#about" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
+                        <a href="#home" class="dark:text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                        <a href="#score" class="dark:text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Leaderboard</a>
+                        <a href="#about" class="dark:text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
                     </div>
                 </div>
             </nav>
@@ -951,42 +126,58 @@
                     <p>Explore o Universo com a nossa emocionante demonstração do SpaceShooter e embarque em uma aventura intergaláctica sem igual.</p>
                 </div>
 
+                <h2 class="text-3xl font-bold text-center mt-16 dark:text-white">Downloads</h2>
                 <div class="grid grid-cols-3 gap-6 lg:gap-8 text-center mt-4">
-                    <a href="https://github.com/Unix-User/SpaceShooter" class="flex items-center justify-center bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-lg">Código no GitHub</a>
-                    <a href="/storage/SpaceShooter.exe" class="flex items-center justify-center bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded-lg">Baixar Windows</a>
-                    <a href="/storage/SpaceShooter.apk" class="flex items-center justify-center bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded-lg">Baixar Android</a>
+
+                    <a href="https://github.com/Unix-User/SpaceShooter" class="flex items-center justify-center bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="h-7 px-2" fill="currentColor">
+                            <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                        </svg>
+                    </a>
+                    <a href="/storage/SpaceShooter.exe" class="flex items-center justify-center bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="h-7 px-2" fill="currentColor">
+                            <path d="M0 93.7l183.6-25.3v177.4H0V93.7zm0 324.6l183.6 25.3V268.4H0v149.9zm203.8 28L448 480V268.4H203.8v177.9zm0-380.6v180.1H448V32L203.8 65.7z" />
+                        </svg>
+                    </a>
+                    <a href="/storage/SpaceShooter.apk" class="flex items-center justify-center bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="h-7 px-2" fill="currentColor">
+                            <path d="M420.6 301.9a24 24 0 1 1 24-24 24 24 0 0 1 -24 24m-265.1 0a24 24 0 1 1 24-24 24 24 0 0 1 -24 24m273.7-144.5 47.9-83a10 10 0 1 0 -17.3-10h0l-48.5 84.1a301.3 301.3 0 0 0 -246.6 0L116.2 64.5a10 10 0 1 0 -17.3 10h0l47.9 83C64.5 202.2 8.2 285.6 0 384H576c-8.2-98.5-64.5-181.8-146.9-226.6" />
+                        </svg>
+                    </a>
                 </div>
             </div>
 
+
             <div id="score" class="mt-16">
+                <h2 class="text-3xl font-bold text-center mb-4 dark:text-white">Leaderboard</h2>
                 <div class="flex justify-end space-x-2 mb-4">
-                    <a href="?orderBy=id&direction=asc#score" class="h-5 w-5 p-2 rounded bg-gray-800 hover:bg-gray-700">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <a href="?orderBy=id&direction=asc#score" class="h-8 w-8 p-2 rounded bg-gray-300 dark:bg-gray-700 hover:bg-gray-400 dark:hover:bg-gray-800">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                             <path fill="white" d="M450.7 38c8.3 6 13.3 15.7 13.3 26v96h16c17.7 0 32 14.3 32 32s-14.3 32-32 32H432 384c-17.7 0-32-14.3-32-32s14.3-32 32-32h16V108.4l-5.9 2c-16.8 5.6-34.9-3.5-40.5-20.2s3.5-34.9 20.2-40.5l48-16c9.8-3.3 20.5-1.6 28.8 4.4zM160 32c9 0 17.5 3.8 23.6 10.4l88 96c11.9 13 11.1 33.3-2 45.2s-33.3 11.1-45.2-2L192 146.3V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V146.3L95.6 181.6c-11.9 13-32.2 13.9-45.2 2s-13.9-32.2-2-45.2l88-96C142.5 35.8 151 32 160 32zM445.7 364.9A32 32 0 1 0 418.3 307a32 32 0 1 0 27.4 57.9zm-40.7 54.9C369.6 408.4 344 375.2 344 336c0-48.6 39.4-88 88-88s88 39.4 88 88c0 23.5-7.5 46.3-21.5 65.2L449.7 467c-10.5 14.2-30.6 17.2-44.8 6.7s-17.2-30.6-6.7-44.8l6.8-9.2z" />
                         </svg>
                     </a>
-                    <a href="?orderBy=id&direction=desc#score" class="h-5 w-5 p-2 rounded bg-gray-800 hover:bg-gray-700">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <a href="?orderBy=id&direction=desc#score" class="h-8 w-8 p-2 rounded bg-gray-300 dark:bg-gray-700 hover:bg-gray-400 dark:hover:bg-gray-800">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                             <path fill="white" d="M450.7 38c-8.3-6-19.1-7.7-28.8-4.4l-48 16c-16.8 5.6-25.8 23.7-20.2 40.5s23.7 25.8 40.5 20.2l5.9-2V160H384c-17.7 0-32 14.3-32 32s14.3 32 32 32h48 48c17.7 0 32-14.3 32-32s-14.3-32-32-32H464V64c0-10.3-4.9-19.9-13.3-26zM160 480c9 0 17.5-3.8 23.6-10.4l88-96c11.9-13 11.1-33.3-2-45.2s-33.3-11.1-45.2 2L192 365.7V64c0-17.7-14.3-32-32-32s-32 14.3-32 32V365.7L95.6 330.4c-11.9-13-32.2-13.9-45.2-2s-13.9 32.2-2 45.2l88 96C142.5 476.2 151 480 160 480zM418.3 307a32 32 0 1 1 27.4 57.9A32 32 0 1 1 418.3 307zM405.1 419.8l-6.8 9.2c-10.5 14.2-7.5 34.2 6.7 44.8s34.2 7.5 44.8-6.7l48.8-65.8c14-18.9 21.5-41.7 21.5-65.2c0-48.6-39.4-88-88-88s-88 39.4-88 88c0 39.2 25.6 72.4 61.1 83.8z" />
                         </svg>
                     </a>
-                    <a href="?orderBy=score&direction=desc#score" class="h-5 w-5 p-2 rounded bg-gray-800 hover:bg-gray-700">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <a href="?orderBy=score&direction=desc#score" class="h-8 w-8 p-2 rounded bg-gray-300 dark:bg-gray-700 hover:bg-gray-400 dark:hover:bg-gray-800">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                             <path fill="white" d="M151.6 42.4C145.5 35.8 137 32 128 32s-17.5 3.8-23.6 10.4l-88 96c-11.9 13-11.1 33.3 2 45.2s33.3 11.1 45.2-2L96 146.3V448c0 17.7 14.3 32 32 32s32-14.3 32-32V146.3l32.4 35.4c11.9 13 32.2 13.9 45.2 2s13.9-32.2 2-45.2l-88-96zM320 480h32c17.7 0 32-14.3 32-32s-14.3-32-32-32H320c-17.7 0-32 14.3-32 32s14.3 32 32 32zm0-128h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H320c-17.7 0-32 14.3-32 32s14.3 32 32 32zm0-128H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H320c-17.7 0-32 14.3-32 32s14.3 32 32 32zm0-128H544c17.7 0 32-14.3 32-32s-14.3-32-32-32H320c-17.7 0-32 14.3-32 32s14.3 32 32 32z" />
                         </svg>
                     </a>
-                    <a href="?orderBy=score&direction=asc#score" class="h-5 w-5 p-2 rounded bg-gray-800 hover:bg-gray-700">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <a href="?orderBy=score&direction=asc#score" class="h-8 w-8 p-2 rounded bg-gray-300 dark:bg-gray-700 hover:bg-gray-400 dark:hover:bg-gray-800">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                             <path fill="white" d="M151.6 469.6C145.5 476.2 137 480 128 480s-17.5-3.8-23.6-10.4l-88-96c-11.9-13-11.1-33.3 2-45.2s33.3-11.1 45.2 2L96 365.7V64c0-17.7 14.3-32 32-32s32 14.3 32 32V365.7l32.4-35.4c11.9-13 32.2-13.9 45.2-2s13.9 32.2 2 45.2l-88 96zM320 32h32c17.7 0 32 14.3 32 32s-14.3 32-32 32H320c-17.7 0-32-14.3-32-32s14.3-32 32-32zm0 128h96c17.7 0 32 14.3 32 32s-14.3 32-32 32H320c-17.7 0-32-14.3-32-32s14.3-32 32-32zm0 128H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H320c-17.7 0-32-14.3-32-32s14.3-32 32-32zm0 128H544c17.7 0 32 14.3 32 32s-14.3 32-32 32H320c-17.7 0-32-14.3-32-32s14.3-32 32-32z" />
                         </svg>
                     </a>
-                    <a href="?orderBy=name&direction=asc#score" class="h-5 w-5 p-2 rounded bg-gray-800 hover:bg-gray-700">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <a href="?orderBy=name&direction=asc#score" class="h-8 w-8 p-2 rounded bg-gray-300 dark:bg-gray-700 hover:bg-gray-400 dark:hover:bg-gray-800">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                             <path fill="white" d="M183.6 42.4C177.5 35.8 169 32 160 32s-17.5 3.8-23.6 10.4l-88 96c-11.9 13-11.1 33.3 2 45.2s33.3 11.1 45.2-2L128 146.3V448c0 17.7 14.3 32 32 32s32-14.3 32-32V146.3l32.4 35.4c11.9 13 32.2 13.9 45.2 2s13.9-32.2 2-45.2l-88-96zM320 64c0 17.7 14.3 32 32 32h50.7l-73.4 73.4c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H429.3l73.4-73.4c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8H352c-17.7 0-32 14.3-32 32zm96 192c-12.1 0-23.2 6.8-28.6 17.7l-64 128-16 32c-7.9 15.8-1.5 35 14.3 42.9s35 1.5 42.9-14.3l7.2-14.3h88.4l7.2 14.3c7.9 15.8 27.1 22.2 42.9 14.3s22.2-27.1 14.3-42.9l-16-32-64-128C439.2 262.8 428.1 256 416 256zM395.8 400L416 359.6 436.2 400H395.8z" />
                         </svg>
                     </a>
-                    <a href="?orderBy=name&direction=desc#score" class="h-5 w-5 p-2 rounded bg-gray-800 hover:bg-gray-700">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <a href="?orderBy=name&direction=desc#score" class="h-8 w-8 p-2 rounded bg-gray-300 dark:bg-gray-700 hover:bg-gray-400 dark:hover:bg-gray-800">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                             <path fill="white" d="M183.6 469.6C177.5 476.2 169 480 160 480s-17.5-3.8-23.6-10.4l-88-96c-11.9-13-11.1-33.3 2-45.2s33.3-11.1 45.2 2L128 365.7V64c0-17.7 14.3-32 32-32s32 14.3 32 32V365.7l32.4-35.4c11.9-13 32.2-13.9 45.2-2s13.9 32.2 2 45.2l-88 96zM320 64c0-17.7 14.3-32 32-32H480c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9L429.3 160H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H352c-12.9 0-24.6-7.8-29.6-19.8s-2.2-25.7 6.9-34.9L402.7 96H352c-17.7 0-32-14.3-32-32zm96 192c12.1 0 23.2 6.8 28.6 17.7l64 128 16 32c7.9 15.8 1.5 35-14.3 42.9s-35 1.5-42.9-14.3L460.2 448H371.8l-7.2 14.3c-7.9 15.8-27.1 22.2-42.9 14.3s-22.2-27.1-14.3-42.9l16-32 64-128c5.4-10.8 16.5-17.7 28.6-17.7zM395.8 400h40.4L416 359.6 395.8 400z" />
                         </svg>
                     </a>
