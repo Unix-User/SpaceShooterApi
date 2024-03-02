@@ -870,6 +870,16 @@
             }
         }
     </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggleButton = document.querySelector('.menu-toggle');
+            const menu = document.querySelector('.mobile-menu');
+
+            toggleButton.addEventListener('click', function() {
+                menu.classList.toggle('hidden');
+            });
+        });
+    </script>
 </head>
 
 <body class="antialiased">
@@ -910,21 +920,29 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="hidden md:block">
-                            <div class="ml-4 flex items-center md:ml-6">
-                                <button class="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
-                                    <span class="sr-only">View notifications</span>
-                                    <!-- Icon -->
-                                </button>
-                                <!-- Profile dropdown -->
-                            </div>
-                        </div>
                         <div class="-mr-2 flex md:hidden">
-                            <!-- Mobile menu button -->
+                            <button class="menu-toggle bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white">
+                                <span class="sr-only">Open main menu</span>
+                                <!-- Icon when menu is closed. -->
+                                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                                </svg>
+                                <!-- Icon when menu is open. -->
+                                <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
                         </div>
                     </div>
                 </div>
-                <!-- Mobile menu, show/hide based on menu state. -->
+                <!-- Mobile menu, toggle classes based on menu state. -->
+                <div class="mobile-menu md:hidden hidden">
+                    <div class="px-2 pt-2 pb-3 space-y-1">
+                        <a href="#home" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                        <a href="#score" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Leaderboard</a>
+                        <a href="#about" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
+                    </div>
+                </div>
             </nav>
 
             <div id="home" class="mt-16">
@@ -932,10 +950,11 @@
                     <h2 class="text-3xl font-bold">Bem-vindo ao SpaceShooter!</h2>
                     <p>Explore o Universo com a nossa emocionante demonstração do SpaceShooter e embarque em uma aventura intergaláctica sem igual.</p>
                 </div>
+
                 <div class="grid grid-cols-3 gap-6 lg:gap-8 text-center mt-4">
-                    <a href="https://github.com/Unix-User/SpaceShooter" class="bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-lg">Código no GitHub</a>
-                    <a href="/storage/SpaceShooter.exe" class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded-lg">Baixar Windows</a>
-                    <a href="/storage/SpaceShooter.apk" class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded-lg">Baixar Android</a>
+                    <a href="https://github.com/Unix-User/SpaceShooter" class="flex items-center justify-center bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-lg">Código no GitHub</a>
+                    <a href="/storage/SpaceShooter.exe" class="flex items-center justify-center bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded-lg">Baixar Windows</a>
+                    <a href="/storage/SpaceShooter.apk" class="flex items-center justify-center bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded-lg">Baixar Android</a>
                 </div>
             </div>
 
@@ -944,20 +963,22 @@
 
                     @foreach ($scores as $score)
                     <div class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
-                        <div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div class="bg-red-50 dark:bg-red-800/20 flex items-center justify-center rounded-full">
-                                <img src="storage/logo.png" alt="SpaceShooter Logo" class="h-32 w-32">
+                                <img src="storage/logo.png" alt="SpaceShooter Logo">
                             </div>
-                            <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">{{ $score->name }}</h2>
-                            <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                                {{ $score->score }}
-                            </p>
+                            <div>
+                                <h2 class="text-xl font-semibold text-gray-900 dark:text-white">{{ $score->name }}</h2>
+                                <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+                                    {{ $score->score }}
+                                </p>
+                            </div>
                         </div>
                     </div>
                     @endforeach
                 </div>
                 <div class="mt-8">
-                    {{ $scores->links() }}
+                    @include('vendor.pagination.spaceshooter-tailwind', ['paginator' => $scores])
                 </div>
             </div>
 
