@@ -8,11 +8,14 @@ use App\Models\Score;
 class ScoreController extends Controller
 {
 
-    public function index()
+    public function index(Request $request)
     {
-        $scores = Score::all();
-        return response()->json($scores);
+        $orderBy = $request->query('orderBy', 'score');
+        $orderDirection = $request->query('direction', 'desc');
+        $scores = Score::orderBy($orderBy, $orderDirection)->paginate(8);
+        return view('welcome', compact('scores'));
     }
+    
     public function store(Request $request)
     {
         $score = new Score;

@@ -14,11 +14,7 @@ use App\Models\Score;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
-Route::get('/', function () {
-    $scores = Score::orderBy('score', 'desc')->paginate(8);
-    return view('welcome', compact('scores'));
-});
+Route::get('/', [ScoreController::class, 'index']);
 
 // Using the imported ScoreController for route definitions
 Route::get('/scores', [ScoreController::class, 'index']);
